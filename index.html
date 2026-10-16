@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -12,7 +10,12 @@
 
     <meta
         name="description"
-        content="Ahmed Hatem — Mechatronics Engineer working across robotics, industrial automation, embedded systems, software testing, data science and engine systems."
+        content="Ahmed Hatem — Mechatronics Engineer working across robotics, industrial automation, embedded systems, software testing, data analysis and machine learning."
+    >
+
+    <meta
+        name="keywords"
+        content="Ahmed Hatem, Mechatronics Engineer, Robotics, Automation, Embedded Systems, Software Testing, Data Analysis, Machine Learning"
     >
 
     <meta
@@ -28,69 +31,51 @@
         rel="stylesheet"
         href="style.css"
     >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet"
-    >
-
 </head>
 
 
 <body>
 
-
 <!-- =========================================================
-     HEADER
+     NAVIGATION
 ========================================================= -->
 
 <header class="site-header">
 
-    <div class="container nav-container">
+    <nav class="navbar container">
 
         <a
             href="#home"
-            class="logo"
+            class="brand"
         >
-            AHMED<span>.</span>
+            <span class="brand-mark">AH</span>
+
+            <span class="brand-name">
+                Ahmed Hatem
+            </span>
         </a>
 
 
-        <input
-            type="checkbox"
-            id="menu-toggle"
-            class="menu-checkbox"
-        >
-
-        <label
-            for="menu-toggle"
-            class="menu-button"
+        <button
+            class="menu-toggle"
+            id="menuToggle"
             aria-label="Open navigation"
+            aria-expanded="false"
         >
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+            ☰
+        </button>
 
 
-        <nav class="nav-links">
+        <div
+            class="nav-links"
+            id="navLinks"
+        >
 
             <a href="#home">
                 Home
             </a>
 
-            <a href="#about">
+            <a href="#story">
                 Story
             </a>
 
@@ -110,19 +95,19 @@
                 Contact
             </a>
 
-        </nav>
+        </div>
 
-    </div>
+    </nav>
 
 </header>
 
 
 
+<main>
+
 <!-- =========================================================
      HERO
 ========================================================= -->
-
-<main>
 
 <section
     id="home"
@@ -130,65 +115,59 @@
 >
 
     <div class="hero-glow hero-glow-one"></div>
-
     <div class="hero-glow hero-glow-two"></div>
 
 
-    <div class="container hero-grid">
-
+    <div class="hero-grid container">
 
         <!-- LEFT -->
 
         <div class="hero-content">
 
-            <div class="eyebrow">
-
-                <span class="status-dot"></span>
-
+            <p class="eyebrow">
                 MECHATRONICS ENGINEER
-
-            </div>
+            </p>
 
 
             <h1>
-
-                I build
-
-                <span>
-                    systems
-                </span>
-
-                that move,
-
-                <span>
-                    think
-                </span>
-
-                &amp;
-
-                <span>
-                    improve.
-                </span>
-
+                AHMED
+                <span>HATEM</span>
             </h1>
 
 
-            <p class="hero-description">
+            <h2>
+                Building systems.<br>
+                Connecting disciplines.
+            </h2>
 
+
+            <p class="hero-lead">
                 Mechatronics Engineer with a strong foundation in
-                Robotics, Industrial Automation, Embedded Systems,
-                Data Science, and Engine Systems — combining
-                mechanical and electrical engineering with programming,
-                control systems and technical operations.
-
+                robotics, industrial automation, embedded systems,
+                software testing, data science and intelligent systems.
             </p>
+
+
+            <div class="hero-usp">
+
+                <span class="usp-label">
+                    ENGINEERING APPROACH
+                </span>
+
+                <p>
+                    I connect mechanical, electrical and software
+                    engineering to understand the complete system —
+                    then design, build, test, analyze and improve it.
+                </p>
+
+            </div>
 
 
             <div class="hero-actions">
 
                 <a
                     href="#projects"
-                    class="button button-primary"
+                    class="btn btn-primary"
                 >
                     Explore My Work
                     <span>→</span>
@@ -197,22 +176,22 @@
 
                 <a
                     href="#contact"
-                    class="button button-secondary"
+                    class="btn btn-secondary"
                 >
-                    Let's Connect
+                    Contact Me
                 </a>
 
             </div>
 
 
-            <div class="hero-links">
+            <div class="quick-links">
 
                 <a
                     href="https://github.com/Ahmdhatem"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    GitHub ↗
+                    GitHub
                 </a>
 
                 <a
@@ -220,19 +199,18 @@
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    LinkedIn ↗
+                    LinkedIn
                 </a>
 
                 <a
                     href="mailto:ahmeedhatem76@gmail.com"
                 >
-                    Email ↗
+                    Email
                 </a>
 
             </div>
 
         </div>
-
 
 
         <!-- RIGHT -->
@@ -244,51 +222,60 @@
                 <div class="portrait-glow"></div>
 
                 <img
-                    src="./Polished%20Portrait%20on%20Emerald%20Green.png"
+                    src="Polished Portrait on Emerald Green.png"
                     alt="Ahmed Hatem"
                     class="portrait"
                 >
 
-                <div class="portrait-border"></div>
+                <div class="portrait-caption">
+
+                    <span>
+                        MECHATRONICS
+                    </span>
+
+                    <strong>
+                        ENGINEER
+                    </strong>
+
+                </div>
 
             </div>
 
 
-            <div class="floating-card floating-card-top">
+            <div class="floating-card card-one">
 
                 <span class="floating-number">
                     01
                 </span>
 
-                <span>
-                    Robotics
-                </span>
+                <div>
+                    <strong>
+                        Robotics
+                    </strong>
+
+                    <small>
+                        Autonomous systems
+                    </small>
+                </div>
 
             </div>
 
 
-            <div class="floating-card floating-card-middle">
+            <div class="floating-card card-two">
 
                 <span class="floating-number">
                     02
                 </span>
 
-                <span>
-                    Automation
-                </span>
+                <div>
+                    <strong>
+                        Automation
+                    </strong>
 
-            </div>
-
-
-            <div class="floating-card floating-card-bottom">
-
-                <span class="floating-number">
-                    03
-                </span>
-
-                <span>
-                    Data &amp; AI
-                </span>
+                    <small>
+                        Industrial systems
+                    </small>
+                </div>
 
             </div>
 
@@ -301,153 +288,69 @@
 
 
 <!-- =========================================================
-     INTRO STRIP
-========================================================= -->
-
-<section class="intro-strip">
-
-    <div class="container intro-grid">
-
-        <div>
-            <span>
-                BASED IN
-            </span>
-
-            <strong>
-                Cairo, Egypt
-            </strong>
-        </div>
-
-
-        <div>
-            <span>
-                EDUCATION
-            </span>
-
-            <strong>
-                Ain Shams University
-            </strong>
-        </div>
-
-
-        <div>
-            <span>
-                DEGREE
-            </span>
-
-            <strong>
-                B.Sc. Mechatronics Engineering
-            </strong>
-        </div>
-
-
-        <div>
-            <span>
-                APPROACH
-            </span>
-
-            <strong>
-                Build · Test · Improve
-            </strong>
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     MY STORY
+     STORY
 ========================================================= -->
 
 <section
-    id="about"
+    id="story"
     class="section story-section"
 >
 
     <div class="container">
 
-
         <div class="section-heading">
 
-            <p class="section-number">
+            <p class="section-kicker">
                 01 · MY STORY
             </p>
 
             <h2>
-                From understanding machines
-                <span>to building systems.</span>
+                From understanding machines<br>
+                to building intelligent systems.
             </h2>
 
-        </div>
-
-
-        <div class="story-introduction">
-
-            <div class="story-large-text">
-
-                <p>
-                    My journey started with a simple curiosity:
-                    <strong>how do things actually work?</strong>
-                </p>
-
-            </div>
-
-
-            <div class="story-intro-copy">
-
-                <p>
-                    That question led me into Mechatronics Engineering,
-                    where mechanical systems, electronics, programming,
-                    control and automation became parts of one bigger picture.
-                </p>
-
-                <p>
-                    Over time, that picture grew beyond machines.
-                    I became interested in robotics, software, data and
-                    intelligent systems — and in how all of them can work
-                    together to solve real problems.
-                </p>
-
-            </div>
+            <p class="section-intro">
+                My engineering journey has never been limited to one
+                discipline. Each experience added another layer to the
+                way I understand systems.
+            </p>
 
         </div>
-
 
 
         <div class="story-timeline">
 
-
             <!-- STORY 01 -->
 
-            <article class="story-card">
+            <article class="story-item">
 
-                <div class="story-index">
-                    01
+                <div class="story-marker">
+                    <span>01</span>
                 </div>
 
-                <div class="story-card-content">
+                <div class="story-content">
 
-                    <p class="story-label">
+                    <span class="story-label">
                         THE FOUNDATION
-                    </p>
+                    </span>
 
                     <h3>
-                        Learning how systems work
+                        Learning to see engineering as one system
                     </h3>
 
                     <p>
-                        I studied Mechatronics Engineering at Ain Shams
-                        University, developing a foundation across
-                        mechanical and electrical engineering, programming,
-                        control systems and automation.
+                        I started my journey in Mechatronics Engineering
+                        at Ain Shams University. The field naturally
+                        connected the areas that interested me most:
+                        mechanical design, electronics, programming,
+                        control and automation.
                     </p>
 
                     <p>
-                        Instead of seeing these as separate subjects,
-                        I learned to see them as connected pieces of
-                        the same engineering system.
+                        Instead of looking at a machine as separate
+                        components, I learned to understand how the
+                        mechanical structure, electrical hardware,
+                        control logic and software interact.
                     </p>
 
                 </div>
@@ -458,37 +361,34 @@
 
             <!-- STORY 02 -->
 
-            <article class="story-card">
+            <article class="story-item">
 
-                <div class="story-index">
-                    02
+                <div class="story-marker">
+                    <span>02</span>
                 </div>
 
-                <div class="story-card-content">
+                <div class="story-content">
 
-                    <p class="story-label">
+                    <span class="story-label">
                         BUILDING
-                    </p>
+                    </span>
 
                     <h3>
-                        Turning ideas into machines
+                        Turning engineering theory into real machines
                     </h3>
 
                     <p>
-                        University projects gave me the opportunity to
-                        move from theory into physical systems.
+                        My university projects pushed that foundation
+                        into practical engineering. I worked on robotic
+                        systems, automated production lines, machine
+                        vision, actuator selection, PID control and
+                        system modelling.
                     </p>
 
                     <p>
-                        I worked with automated production lines,
-                        robotic arms, machine vision, PLCs, PID control,
-                        SolidWorks, MATLAB and Siemens TIA Portal.
-                    </p>
-
-                    <p class="story-emphasis">
-                        This was where engineering stopped being
-                        something I only studied — and became something
-                        I could build.
+                        This was where engineering became more than
+                        equations and drawings. Every design decision
+                        had to work together as part of a physical system.
                     </p>
 
                 </div>
@@ -499,50 +399,44 @@
 
             <!-- STORY 03 -->
 
-            <article class="story-card story-featured">
+            <article class="story-item story-highlight">
 
-                <div class="story-index">
-                    03
+                <div class="story-marker">
+                    <span>03</span>
                 </div>
 
-                <div class="story-card-content">
+                <div class="story-content">
 
-                    <p class="story-label">
+                    <span class="story-label">
                         THE TURNING POINT
-                    </p>
+                    </span>
 
                     <h3>
-                        Building an autonomous robot
+                        Building a robot that had to actually work
                     </h3>
 
                     <p>
-                        My graduation project brought many of these
-                        disciplines together.
+                        My graduation project, the Autonomous Shelf Lift
+                        Robot, brought everything together. I worked
+                        with ROS1, LiDAR and EKF-based sensor fusion to
+                        implement autonomous navigation and localization.
                     </p>
 
                     <p>
-                        I developed an Autonomous Shelf Lift Robot
-                        designed to navigate and perform shelf-lifting
-                        operations autonomously.
+                        The system was tested first in simulation and
+                        then in the real world, including a custom
+                        lifting mechanism and a charging station circuit
+                        with BMS monitoring.
                     </p>
 
-                    <p>
-                        The project involved ROS1, LiDAR, EKF-based
-                        sensor fusion, autonomous navigation, embedded
-                        systems and Gazebo, with validation through
-                        real-world testing.
-                    </p>
-
-                    <div class="story-highlight">
-
+                    <div class="story-result">
                         <strong>
-                            A+
+                            A+ Graduation Project
                         </strong>
 
                         <span>
-                            Graduation Project
+                            From simulation to a physical autonomous system
                         </span>
-
                     </div>
 
                 </div>
@@ -553,37 +447,34 @@
 
             <!-- STORY 04 -->
 
-            <article class="story-card">
+            <article class="story-item">
 
-                <div class="story-index">
-                    04
+                <div class="story-marker">
+                    <span>04</span>
                 </div>
 
-                <div class="story-card-content">
+                <div class="story-content">
 
-                    <p class="story-label">
-                        EXPANDING
-                    </p>
+                    <span class="story-label">
+                        EXPANDING THE TOOLBOX
+                    </span>
 
                     <h3>
-                        From hardware to software
+                        From physical systems to data and intelligence
                     </h3>
 
                     <p>
-                        Working with engineering systems made me
-                        increasingly interested in the software behind them.
+                        I then expanded beyond traditional mechatronics
+                        into data analysis, machine learning, deep
+                        learning and computer vision.
                     </p>
 
                     <p>
-                        I started developing skills in software testing,
-                        Java, APIs, Jira, Postman, Selenium and ISTQB-based
-                        testing practices.
-                    </p>
-
-                    <p>
-                        I became interested not only in how software is
-                        built, but also in how it behaves, how it fails
-                        and how it can be improved.
+                        I worked with Python, SQL, TensorFlow, OpenCV
+                        and Scikit-learn, building practical AI/ML
+                        projects and learning how data can become another
+                        engineering tool for understanding and improving
+                        systems.
                     </p>
 
                 </div>
@@ -594,37 +485,41 @@
 
             <!-- STORY 05 -->
 
-            <article class="story-card">
+            <article class="story-item">
 
-                <div class="story-index">
-                    05
+                <div class="story-marker">
+                    <span>05</span>
                 </div>
 
-                <div class="story-card-content">
+                <div class="story-content">
 
-                    <p class="story-label">
-                        DATA &amp; AI
-                    </p>
+                    <span class="story-label">
+                        ENGINEERING IN THE REAL WORLD
+                    </span>
 
                     <h3>
-                        Learning to work with data
+                        Working with operations, machines and people
                     </h3>
 
                     <p>
-                        I also expanded my technical background into
-                        Data Science and Artificial Intelligence.
+                        Professional experience added another dimension.
+                        At Delotrans, I worked with large-scale logistics
+                        operations, compliance and technical coordination.
                     </p>
 
                     <p>
-                        During my AI/ML internship at Elevvo Pathways,
-                        I worked with Python, Data Analysis, Machine
-                        Learning, Deep Learning, TensorFlow, OpenCV
-                        and Scikit-learn.
+                        Today, as a Technical Office Engineer at Orascom
+                        Services, I work with Volvo Penta engine operations,
+                        spare-parts identification, technical requirements
+                        and documentation.
                     </p>
 
                     <p>
-                        This gave me another way to understand engineering
-                        problems — through both physical systems and data.
+                        These experiences taught me that engineering is
+                        not only about building technology. It is also
+                        about understanding requirements, communicating
+                        clearly, solving problems and making systems work
+                        reliably in real operations.
                     </p>
 
                 </div>
@@ -635,89 +530,39 @@
 
             <!-- STORY 06 -->
 
-            <article class="story-card">
+            <article class="story-item story-final">
 
-                <div class="story-index">
-                    06
+                <div class="story-marker">
+                    <span>06</span>
                 </div>
 
-                <div class="story-card-content">
+                <div class="story-content">
 
-                    <p class="story-label">
-                        REAL-WORLD ENGINEERING
-                    </p>
+                    <span class="story-label">
+                        WHERE I AM GOING
+                    </span>
 
                     <h3>
-                        Working with real operations
+                        Build. Test. Analyze. Improve.
                     </h3>
 
                     <p>
-                        My professional experience has taken me beyond
-                        engineering projects and into real operational
-                        environments.
+                        Today, my engineering interests span robotics,
+                        automation, embedded systems, software testing,
+                        data and intelligent systems.
                     </p>
 
                     <p>
-                        At Delotrans, I developed experience in operations,
-                        coordination, compliance and problem-solving while
-                        managing work related to 255 trucks and supporting
-                        GTG/PTI processing for more than 8,800 drivers.
+                        The common thread is simple: I enjoy understanding
+                        complex systems, getting them to work, finding
+                        what can be improved and turning ideas into
+                        practical solutions.
                     </p>
 
-                    <p>
-                        Today, at Orascom Services, I work as a Technical
-                        Office Engineer supporting Volvo Penta engine
-                        operations through spare-parts identification,
-                        technical documentation and requirements.
+                    <p class="story-closing">
+                        The next system is always another opportunity
+                        to learn, build and improve.
                     </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- STORY 07 -->
-
-            <article class="story-card story-final">
-
-                <div class="story-index">
-                    07
-                </div>
-
-                <div class="story-card-content">
-
-                    <p class="story-label">
-                        TODAY
-                    </p>
-
-                    <h3>
-                        Still building. Still learning.
-                    </h3>
-
-                    <p>
-                        Today, my interests sit at the intersection of
-                        engineering and technology — robotics, automation,
-                        embedded systems, software testing, data and
-                        intelligent systems.
-                    </p>
-
-                    <p>
-                        I continue to develop across these areas because
-                        I believe the strongest solutions come from
-                        understanding the complete system, not just
-                        one component.
-                    </p>
-
-                    <div class="story-ending">
-
-                        <span></span>
-
-                        <strong>
-                            BUILD · TEST · IMPROVE
-                        </strong>
-
-                    </div>
 
                 </div>
 
@@ -742,115 +587,117 @@
 
     <div class="container">
 
-
         <div class="section-heading">
 
-            <p class="section-number">
-                02 · TECHNICAL SKILLS
+            <p class="section-kicker">
+                02 · SKILLS
             </p>
 
             <h2>
-                A multidisciplinary
-                <span>engineering toolkit.</span>
+                A multidisciplinary<br>
+                engineering toolkit.
             </h2>
+
+            <p class="section-intro">
+                Different tools, one goal: understanding and improving
+                complete engineering systems.
+            </p>
 
         </div>
 
 
         <div class="skills-grid">
 
+            <div class="skill-card">
 
-            <!-- ROBOTICS -->
-
-            <article class="skill-card">
-
-                <div class="skill-card-top">
-
-                    <span class="skill-number">
-                        01
-                    </span>
-
-                    <span class="skill-symbol">
-                        ROBOT
-                    </span>
-
+                <div class="skill-icon">
+                    01
                 </div>
 
                 <h3>
-                    Robotics &amp; Embedded
+                    Robotics & Automation
                 </h3>
 
                 <p>
-                    Building and understanding systems where hardware,
-                    software and physical behavior meet.
+                    Designing and controlling robotic and automated
+                    systems from mechanical structure to control.
                 </p>
 
-                <div class="tag-list">
+                <div class="skill-tags">
 
                     <span>ROS</span>
-                    <span>C/C++</span>
-                    <span>MATLAB</span>
-                    <span>Embedded Systems</span>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- AUTOMATION -->
-
-            <article class="skill-card">
-
-                <div class="skill-card-top">
-
-                    <span class="skill-number">
-                        02
-                    </span>
-
-                    <span class="skill-symbol">
-                        PLC
-                    </span>
-
-                </div>
-
-                <h3>
-                    Industrial Automation
-                </h3>
-
-                <p>
-                    Designing and understanding automated production
-                    systems, control logic and industrial processes.
-                </p>
-
-                <div class="tag-list">
-
-                    <span>PLC</span>
-                    <span>TIA Portal</span>
+                    <span>Robotic Arms</span>
                     <span>PID</span>
-                    <span>Machine Vision</span>
+                    <span>Factory I/O</span>
+                    <span>MATLAB</span>
                     <span>SolidWorks</span>
 
                 </div>
 
-            </article>
+            </div>
 
 
+            <div class="skill-card">
 
-            <!-- SOFTWARE TESTING -->
+                <div class="skill-icon">
+                    02
+                </div>
 
-            <article class="skill-card">
+                <h3>
+                    Embedded Systems
+                </h3>
 
-                <div class="skill-card-top">
+                <p>
+                    Developing hardware-aware solutions using
+                    microcontrollers, sensors, actuators and embedded
+                    programming.
+                </p>
 
-                    <span class="skill-number">
-                        03
-                    </span>
+                <div class="skill-tags">
 
-                    <span class="skill-symbol">
-                        QA
-                    </span>
+                    <span>C</span>
+                    <span>C++</span>
+                    <span>Arduino</span>
+                    <span>Microcontrollers</span>
+                    <span>Sensors</span>
 
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    03
+                </div>
+
+                <h3>
+                    Data & AI
+                </h3>
+
+                <p>
+                    Using data analysis and machine learning to turn
+                    datasets into useful engineering insights.
+                </p>
+
+                <div class="skill-tags">
+
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>TensorFlow</span>
+                    <span>OpenCV</span>
+                    <span>Scikit-learn</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    04
                 </div>
 
                 <h3>
@@ -858,11 +705,12 @@
                 </h3>
 
                 <p>
-                    Developing practical testing skills across test
-                    analysis, test design and modern testing tools.
+                    Developing practical software testing skills across
+                    test analysis, API testing, automation and Agile
+                    development.
                 </p>
 
-                <div class="tag-list">
+                <div class="skill-tags">
 
                     <span>ISTQB</span>
                     <span>Jira</span>
@@ -872,194 +720,65 @@
 
                 </div>
 
-            </article>
-
-
-
-            <!-- DATA -->
-
-            <article class="skill-card">
-
-                <div class="skill-card-top">
-
-                    <span class="skill-number">
-                        04
-                    </span>
-
-                    <span class="skill-symbol">
-                        DATA
-                    </span>
-
-                </div>
-
-                <h3>
-                    Data Science &amp; AI
-                </h3>
-
-                <p>
-                    Applying data analysis and machine learning techniques
-                    to extract insights and build intelligent solutions.
-                </p>
-
-                <div class="tag-list">
-
-                    <span>Python</span>
-                    <span>SQL</span>
-                    <span>NumPy</span>
-                    <span>Pandas</span>
-                    <span>Scikit-learn</span>
-                    <span>TensorFlow</span>
-                    <span>OpenCV</span>
-
-                </div>
-
-            </article>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     ENGINEERING APPROACH
-========================================================= -->
-
-<section class="section approach-section">
-
-    <div class="container">
-
-
-        <div class="section-heading">
-
-            <p class="section-number">
-                03 · ENGINEERING APPROACH
-            </p>
-
-            <h2>
-                I don't just build.
-                <span>I iterate.</span>
-            </h2>
-
-        </div>
-
-
-        <div class="approach-line">
-
-
-            <div class="approach-step">
-
-                <span>
-                    01
-                </span>
-
-                <h3>
-                    Understand
-                </h3>
-
-                <p>
-                    Define the problem and requirements.
-                </p>
-
             </div>
 
 
-            <div class="approach-arrow">
-                →
-            </div>
+            <div class="skill-card">
 
-
-            <div class="approach-step">
-
-                <span>
-                    02
-                </span>
-
-                <h3>
-                    Design
-                </h3>
-
-                <p>
-                    Develop the architecture and solution.
-                </p>
-
-            </div>
-
-
-            <div class="approach-arrow">
-                →
-            </div>
-
-
-            <div class="approach-step">
-
-                <span>
-                    03
-                </span>
-
-                <h3>
-                    Build
-                </h3>
-
-                <p>
-                    Turn the design into a working system.
-                </p>
-
-            </div>
-
-
-            <div class="approach-arrow">
-                →
-            </div>
-
-
-            <div class="approach-step">
-
-                <span>
-                    04
-                </span>
-
-                <h3>
-                    Test
-                </h3>
-
-                <p>
-                    Verify behavior and investigate failures.
-                </p>
-
-            </div>
-
-
-            <div class="approach-arrow">
-                →
-            </div>
-
-
-            <div class="approach-step">
-
-                <span>
+                <div class="skill-icon">
                     05
-                </span>
+                </div>
 
                 <h3>
-                    Improve
+                    Industrial Systems
                 </h3>
 
                 <p>
-                    Iterate toward a better solution.
+                    Experience with production-line simulation,
+                    industrial control concepts and engineering
+                    visualization.
                 </p>
+
+                <div class="skill-tags">
+
+                    <span>TIA Portal</span>
+                    <span>HMI</span>
+                    <span>Factory I/O</span>
+                    <span>Control</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    06
+                </div>
+
+                <h3>
+                    Engineering Tools
+                </h3>
+
+                <p>
+                    Combining modelling, design, analysis and programming
+                    tools to move from concept to implementation.
+                </p>
+
+                <div class="skill-tags">
+
+                    <span>SolidWorks</span>
+                    <span>MATLAB</span>
+                    <span>Python</span>
+                    <span>C++</span>
+                    <span>Git</span>
+
+                </div>
 
             </div>
 
         </div>
-
-
-        <p class="approach-note">
-            Every test is feedback. Every failure is information.
-        </p>
 
     </div>
 
@@ -1078,328 +797,258 @@
 
     <div class="container">
 
+        <div class="section-heading projects-heading">
 
-        <div class="section-heading">
+            <div>
 
-            <p class="section-number">
-                04 · SELECTED PROJECTS
+                <p class="section-kicker">
+                    03 · SELECTED WORK
+                </p>
+
+                <h2>
+                    Three projects.<br>
+                    Three different engineering challenges.
+                </h2>
+
+            </div>
+
+            <p class="section-intro">
+                From renewable energy to industrial automation and
+                autonomous robotics, each project challenged me to
+                connect multiple engineering disciplines.
             </p>
 
-            <h2>
-                Systems I designed,
-                <span>built and tested.</span>
-            </h2>
-
         </div>
 
 
-        <div class="projects-list">
+
+        <!-- PROJECT 01 -->
+
+        <article class="project-card project-featured">
+
+            <div class="project-image">
+
+                <img
+                    src="Neon Green Autonomous Robot Platform.png"
+                    alt="Autonomous Shelf Lift Robot"
+                >
+
+                <div class="project-number">
+                    01
+                </div>
+
+            </div>
 
 
-            <!-- =================================================
-                 PROJECT 01 — ASLR
-            ================================================== -->
+            <div class="project-info">
 
-            <article class="project-card project-card-large">
+                <span class="project-category">
+                    GRADUATION PROJECT · ROBOTICS
+                </span>
+
+                <h3>
+                    Autonomous Shelf Lift Robot
+                </h3>
+
+                <p class="project-subtitle">
+                    Building an autonomous robot capable of navigating
+                    and performing shelf-lifting operations.
+                </p>
+
+                <p>
+                    The Autonomous Shelf Lift Robot was my graduation
+                    project and the point where multiple areas of
+                    mechatronics came together.
+                </p>
+
+                <p>
+                    I implemented autonomous navigation and localization
+                    using ROS1, LiDAR and EKF-based sensor fusion.
+                    The system was validated through both Gazebo
+                    simulation and real-world testing.
+                </p>
+
+                <p>
+                    The project also included a custom lifting mechanism
+                    and a charging station circuit with BMS monitoring.
+                </p>
 
 
-                <div class="project-media">
+                <div class="project-tech">
 
-                    <img
-                        src="./Neon%20Green%20Autonomous%20Robot%20Platform.png"
-                        alt="Autonomous Shelf Lift Robot"
-                        loading="lazy"
-                    >
-
-                    <div class="project-number">
-                        01
-                    </div>
+                    <span>ROS1</span>
+                    <span>LiDAR</span>
+                    <span>EKF</span>
+                    <span>Sensor Fusion</span>
+                    <span>Gazebo</span>
+                    <span>Embedded Systems</span>
 
                 </div>
 
 
-                <div class="project-details">
+                <div class="project-result">
 
-                    <div class="project-meta-row">
+                    <strong>
+                        A+ Grade
+                    </strong>
 
-                        <span class="project-category">
-                            GRADUATION PROJECT · ROBOTICS
-                        </span>
-
-                        <span class="project-result">
-                            A+
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Autonomous Shelf Lift Robot
-                    </h3>
-
-
-                    <p class="project-lead">
-                        An autonomous warehouse robot designed to
-                        navigate, localize and perform shelf-lifting
-                        operations.
-                    </p>
-
-
-                    <p>
-                        I designed and implemented autonomous navigation
-                        and localization using ROS1, LiDAR and EKF-based
-                        sensor fusion.
-                    </p>
-
-
-                    <p>
-                        The system was validated through Gazebo simulation
-                        and real-world testing, with a custom lifting
-                        mechanism and a charging station circuit including
-                        BMS monitoring.
-                    </p>
-
-
-                    <div class="project-tags">
-
-                        <span>ROS1</span>
-                        <span>LiDAR</span>
-                        <span>EKF Sensor Fusion</span>
-                        <span>Autonomous Navigation</span>
-                        <span>Gazebo</span>
-                        <span>Embedded Systems</span>
-
-                    </div>
-
-
-                    <a
-                        href="https://www.youtube.com/watch?v=ASLJ3l4_G7o"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-demo"
-                    >
-
-                        <span class="demo-icon">
-                            ▶
-                        </span>
-
-                        <span>
-                            Watch Project Demo
-                        </span>
-
-                        <strong>
-                            ↗
-                        </strong>
-
-                    </a>
+                    <span>
+                        Graduation Project
+                    </span>
 
                 </div>
 
-            </article>
+            </div>
+
+        </article>
 
 
 
-            <!-- =================================================
-                 PROJECT 02 — WATER TURBINE
-            ================================================== -->
+        <!-- PROJECT 02 -->
 
-            <article class="project-card project-card-reverse">
+        <article class="project-card project-reverse">
+
+            <div class="project-image">
+
+                <img
+                    src="Water Turbine 1.jpeg"
+                    alt="Water Turbine Project"
+                >
+
+                <div class="project-number">
+                    02
+                </div>
+
+            </div>
 
 
-                <div class="project-media">
+            <div class="project-info">
 
-                    <img
-                        src="./Water%20Turbine%201.jpeg"
-                        alt="Water Turbine Project"
-                        loading="lazy"
-                    >
+                <span class="project-category">
+                    RENEWABLE ENERGY · DESIGN
+                </span>
 
-                    <div class="project-number">
-                        02
-                    </div>
+                <h3>
+                    Water Turbine
+                </h3>
+
+                <p class="project-subtitle">
+                    Designing an undershot water turbine and pushing
+                    engineering performance through competition.
+                </p>
+
+                <p>
+                    This project challenged us to transform mechanical
+                    design principles into a working energy-generation
+                    system.
+                </p>
+
+                <p>
+                    I led the team through the design challenge,
+                    developing an undershot water turbine that achieved
+                    approximately 60% efficiency.
+                </p>
+
+                <p>
+                    The project competed against 42 teams in a competition
+                    sponsored by the Center of Excellence of Energy and
+                    Arizona State University.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>Mechanical Design</span>
+                    <span>Renewable Energy</span>
+                    <span>Fluid Systems</span>
+                    <span>Engineering Analysis</span>
 
                 </div>
 
 
-                <div class="project-details">
+                <div class="project-result">
 
-                    <div class="project-meta-row">
+                    <strong>
+                        1st Place
+                    </strong>
 
-                        <span class="project-category">
-                            RENEWABLE ENERGY
-                        </span>
-
-                        <span class="project-result">
-                            1ST PLACE
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Water Turbine
-                    </h3>
-
-
-                    <p class="project-lead">
-                        A renewable-energy engineering project focused
-                        on developing an efficient undershot water turbine.
-                    </p>
-
-
-                    <p>
-                        I led a team that achieved first place among
-                        42 teams in a water turbine competition sponsored
-                        by the Center of Excellence of Energy and Arizona
-                        State University.
-                    </p>
-
-
-                    <p>
-                        Our team developed an undershot water turbine
-                        achieving 60% efficiency.
-                    </p>
-
-
-                    <div class="project-tags">
-
-                        <span>Renewable Energy</span>
-                        <span>Mechanical Design</span>
-                        <span>Turbine Design</span>
-                        <span>Engineering Analysis</span>
-                        <span>Team Leadership</span>
-
-                    </div>
-
-
-                    <a
-                        href="https://www.youtube.com/shorts/mGp3GZjqD4I"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-demo"
-                    >
-
-                        <span class="demo-icon">
-                            ▶
-                        </span>
-
-                        <span>
-                            Watch Project Demo
-                        </span>
-
-                        <strong>
-                            ↗
-                        </strong>
-
-                    </a>
+                    <span>
+                        Among 42 teams
+                    </span>
 
                 </div>
 
-            </article>
+            </div>
+
+        </article>
 
 
 
-            <!-- =================================================
-                 PROJECT 03 — AUTOMATED LINE
-            ================================================== -->
+        <!-- PROJECT 03 -->
 
-            <article class="project-card project-card-large">
+        <article class="project-card">
+
+            <div class="project-image">
+
+                <img
+                    src="project.jpeg"
+                    alt="Fully Automated Production Line"
+                >
+
+                <div class="project-number">
+                    03
+                </div>
+
+            </div>
 
 
-                <div class="project-media">
+            <div class="project-info">
 
-                    <img
-                        src="./project.jpeg"
-                        alt="Fully Automated Production Line"
-                        loading="lazy"
-                    >
+                <span class="project-category">
+                    INDUSTRIAL AUTOMATION · ROBOTICS
+                </span>
 
-                    <div class="project-number">
-                        03
-                    </div>
+                <h3>
+                    Fully Automated Production Line
+                </h3>
+
+                <p class="project-subtitle">
+                    Designing a production line with dual robotic arms
+                    and machine vision.
+                </p>
+
+                <p>
+                    I designed a complete production-line concept
+                    containing Feeding, Sorting, Assembly and Packaging
+                    stations.
+                </p>
+
+                <p>
+                    The system used two different robotic mechanisms:
+                    a revolute arm for sorting and a Cartesian arm for
+                    assembly operations.
+                </p>
+
+                <p>
+                    I applied PID control for precise positioning at the
+                    packaging station and used MATLAB to determine
+                    actuator sizes and select suitable actuators.
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>SolidWorks</span>
+                    <span>Robotic Arms</span>
+                    <span>Machine Vision</span>
+                    <span>PID Control</span>
+                    <span>MATLAB</span>
 
                 </div>
 
+            </div>
 
-                <div class="project-details">
-
-                    <div class="project-meta-row">
-
-                        <span class="project-category">
-                            INDUSTRIAL AUTOMATION
-                        </span>
-
-                        <span class="project-result">
-                            AUTOMATION
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Fully Automated Production Line
-                    </h3>
-
-
-                    <p class="project-lead">
-                        A complete automated production line combining
-                        feeding, sorting, assembly and packaging.
-                    </p>
-
-
-                    <p>
-                        The system was designed around multiple automated
-                        stations and robotic manipulation to create a
-                        complete production workflow rather than an
-                        isolated automation task.
-                    </p>
-
-
-                    <p>
-                        The project brought together industrial automation,
-                        robotic arms, machine vision, PLC control,
-                        mechanical design and process coordination.
-                    </p>
-
-
-                    <div class="project-tags">
-
-                        <span>PLC</span>
-                        <span>Robotics</span>
-                        <span>Machine Vision</span>
-                        <span>PID Control</span>
-                        <span>SolidWorks</span>
-                        <span>MATLAB</span>
-
-                    </div>
-
-
-                    <a
-                        href="https://www.youtube.com/watch?v=vqTFnu-wJDA"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-demo"
-                    >
-
-                        <span class="demo-icon">
-                            ▶
-                        </span>
-
-                        <span>
-                            Watch Project Demo
-                        </span>
-
-                        <strong>
-                            ↗
-                        </strong>
-
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
+        </article>
 
     </div>
 
@@ -1413,21 +1062,20 @@
 
 <section
     id="experience"
-    class="section section-dark"
+    class="section section-dark experience-section"
 >
 
     <div class="container">
 
-
         <div class="section-heading">
 
-            <p class="section-number">
-                05 · EXPERIENCE
+            <p class="section-kicker">
+                04 · EXPERIENCE
             </p>
 
             <h2>
-                Engineering meets
-                <span>real operations.</span>
+                Engineering beyond<br>
+                the university.
             </h2>
 
         </div>
@@ -1438,105 +1086,41 @@
 
             <!-- ORASCOM -->
 
-            <article class="experience-item">
+            <article class="experience-item current">
 
                 <div class="experience-date">
-                    SEP 2026 — PRESENT
+                    CURRENT
                 </div>
 
                 <div class="experience-main">
 
-                    <p class="experience-type">
-                        PROFESSIONAL EXPERIENCE
-                    </p>
+                    <span class="experience-type">
+                        TECHNICAL OPERATIONS
+                    </span>
 
                     <h3>
-                        Technical Office Engineer
+                        Technical Office Engineer — Engines & Spare Parts
                     </h3>
 
                     <h4>
-                        Spare Parts Operations · Orascom Services
+                        Orascom Services
                     </h4>
 
                     <p>
                         Supporting Volvo Penta engine operations through
-                        spare-parts identification, technical research,
-                        documentation and requirements.
+                        spare-parts identification, technical requirements,
+                        documentation review and coordination of
+                        maintenance and service activities.
                     </p>
 
-                    <ul>
+                    <div class="experience-tags">
 
-                        <li>
-                            Research Volvo Penta parts catalogs and
-                            technical documentation to identify required
-                            spare parts.
-                        </li>
+                        <span>Engine Systems</span>
+                        <span>Spare Parts</span>
+                        <span>Technical Documentation</span>
+                        <span>Requirements</span>
 
-                        <li>
-                            Review engine components and service
-                            requirements using technical catalogs and
-                            maintenance information.
-                        </li>
-
-                        <li>
-                            Support Spare Parts Operations with technical
-                            information and parts requirements.
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- DELOTRANS -->
-
-            <article class="experience-item">
-
-                <div class="experience-date">
-                    AUG 2025 — AUG 2026
-                </div>
-
-                <div class="experience-main">
-
-                    <p class="experience-type">
-                        PROFESSIONAL EXPERIENCE
-                    </p>
-
-                    <h3>
-                        Logistics Specialist
-                    </h3>
-
-                    <h4>
-                        Delotrans Inc.
-                    </h4>
-
-                    <p>
-                        Worked in operations, compliance, coordination
-                        and technical support in an international
-                        logistics environment.
-                    </p>
-
-                    <ul>
-
-                        <li>
-                            Managed compliance operations for a fleet of
-                            255 trucks under U.S. DOT regulations.
-                        </li>
-
-                        <li>
-                            Supported GTG/PTI processing for more than
-                            8,800 drivers.
-                        </li>
-
-                        <li>
-                            Installed and configured more than 100 ELD
-                            systems to support regulatory compliance.
-                        </li>
-
-                    </ul>
+                    </div>
 
                 </div>
 
@@ -1549,14 +1133,14 @@
             <article class="experience-item">
 
                 <div class="experience-date">
-                    AUG 2026 — PRESENT
+                    2026
                 </div>
 
                 <div class="experience-main">
 
-                    <p class="experience-type">
-                        INTERNSHIP
-                    </p>
+                    <span class="experience-type">
+                        SOFTWARE TESTING
+                    </span>
 
                     <h3>
                         Software Tester Intern
@@ -1567,34 +1151,26 @@
                     </h4>
 
                     <p>
-                        Developing practical software testing skills
-                        through an ISTQB v4-aligned track and hands-on
-                        testing activities.
+                        Developing practical software-testing skills
+                        across testing fundamentals, test analysis and
+                        design, Jira, Postman, Selenium and Java.
                     </p>
 
-                    <ul>
+                    <p>
+                        Also contributing as a Team Leader by representing
+                        team feedback, communicating official instructions
+                        and supporting trainees.
+                    </p>
 
-                        <li>
-                            Studying software testing fundamentals and
-                            testing throughout the SDLC.
-                        </li>
+                    <div class="experience-tags">
 
-                        <li>
-                            Practicing static testing with Jira and
-                            hands-on testing with Postman and Selenium.
-                        </li>
+                        <span>ISTQB</span>
+                        <span>Jira</span>
+                        <span>Postman</span>
+                        <span>Selenium</span>
+                        <span>Java</span>
 
-                        <li>
-                            Building skills in test analysis, test design
-                            and Agile testing activities.
-                        </li>
-
-                        <li>
-                            Applying Java fundamentals and testing
-                            practices in an end-to-end capstone project.
-                        </li>
-
-                    </ul>
+                    </div>
 
                 </div>
 
@@ -1607,14 +1183,14 @@
             <article class="experience-item">
 
                 <div class="experience-date">
-                    JUL 2025 — AUG 2025
+                    2025
                 </div>
 
                 <div class="experience-main">
 
-                    <p class="experience-type">
-                        INTERNSHIP
-                    </p>
+                    <span class="experience-type">
+                        ARTIFICIAL INTELLIGENCE
+                    </span>
 
                     <h3>
                         AI / ML Intern
@@ -1625,30 +1201,20 @@
                     </h4>
 
                     <p>
-                        Applied machine learning and data analysis
-                        techniques to practical datasets and AI projects.
+                        Worked on practical machine-learning projects
+                        including loan approval prediction, customer
+                        segmentation and collaborative-filtering
+                        recommendation systems.
                     </p>
 
-                    <ul>
+                    <div class="experience-tags">
 
-                        <li>
-                            Built a loan approval model achieving 98%
-                            accuracy across 4,269 applications.
-                        </li>
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>K-Means</span>
+                        <span>Recommendation Systems</span>
 
-                        <li>
-                            Segmented customers into 5 clusters using
-                            K-Means with a Silhouette Score of approximately
-                            0.55.
-                        </li>
-
-                        <li>
-                            Developed a collaborative-filtering
-                            recommendation system using 100K ratings
-                            from 943 users and 1,682 movies.
-                        </li>
-
-                    </ul>
+                    </div>
 
                 </div>
 
@@ -1656,33 +1222,87 @@
 
 
 
-            <!-- FIRE FIGHTING -->
+            <!-- DELOTRANS -->
 
             <article class="experience-item">
 
                 <div class="experience-date">
-                    JUL 2024 — AUG 2024
+                    2025–26
                 </div>
 
                 <div class="experience-main">
 
-                    <p class="experience-type">
-                        INTERNSHIP
-                    </p>
+                    <span class="experience-type">
+                        OPERATIONS
+                    </span>
 
                     <h3>
-                        Fire Fighting Engineering Intern
+                        Logistics Specialist
                     </h3>
 
                     <h4>
-                        Al Quds for Engineering and Contracting
+                        Delotrans Inc.
                     </h4>
 
                     <p>
-                        Contributed to fire protection projects,
-                        technical documentation, drawings, equipment
-                        selection and quantity take-offs.
+                        Managed compliance operations for a fleet of
+                        255 trucks under U.S. DOT regulations, supported
+                        GTG/PTI processing for more than 8,800 drivers,
+                        and installed and configured 100+ ELD systems.
                     </p>
+
+                    <div class="experience-tags">
+
+                        <span>Operations</span>
+                        <span>Compliance</span>
+                        <span>Coordination</span>
+                        <span>ELD Systems</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EARLIER EXPERIENCE -->
+
+            <article class="experience-item">
+
+                <div class="experience-date">
+                    2022–23
+                </div>
+
+                <div class="experience-main">
+
+                    <span class="experience-type">
+                        ENGINEERING EXPOSURE
+                    </span>
+
+                    <h3>
+                        Engineering Internships
+                    </h3>
+
+                    <h4>
+                        EgyptAir · Arab Contractors · Renewable Energy Commission
+                    </h4>
+
+                    <p>
+                        Gained practical exposure to aircraft systems,
+                        non-destructive testing, internal combustion
+                        engines, renewable-energy technologies, storage
+                        and system protection.
+                    </p>
+
+                    <div class="experience-tags">
+
+                        <span>Engines</span>
+                        <span>Aircraft Systems</span>
+                        <span>NDT</span>
+                        <span>Renewable Energy</span>
+
+                    </div>
 
                 </div>
 
@@ -1697,55 +1317,28 @@
 
 
 <!-- =========================================================
-     EDUCATION
+     PHILOSOPHY
 ========================================================= -->
 
-<section class="section education-section">
+<section class="philosophy-section">
 
-    <div class="container education-layout">
+    <div class="container">
 
+        <div class="philosophy">
 
-        <div>
-
-            <p class="section-number">
-                06 · EDUCATION
+            <p class="section-kicker">
+                ENGINEERING PHILOSOPHY
             </p>
 
             <h2>
-                The foundation
-                <span>behind the systems.</span>
+                I don't just want to know<br>
+                <span>how something works.</span>
             </h2>
 
-        </div>
-
-
-        <div class="education-card">
-
-            <span class="education-year">
-                2020 — 2025
-            </span>
-
-            <h3>
-                B.Sc. in Mechatronics Engineering
-            </h3>
-
             <p>
-                Ain Shams University
+                I want to understand the system behind it,
+                build it, test it, analyze it and make it better.
             </p>
-
-            <div class="education-line"></div>
-
-            <span class="education-project-label">
-                GRADUATION PROJECT
-            </span>
-
-            <strong>
-                Autonomous Shelf Lift Robot
-            </strong>
-
-            <span class="education-grade">
-                A+ Grade
-            </span>
 
         </div>
 
@@ -1761,137 +1354,106 @@
 
 <section
     id="contact"
-    class="contact-section"
+    class="section contact-section"
 >
 
-    <div class="contact-glow"></div>
-
-
-    <div class="container contact-content">
-
-        <p class="section-number">
-            07 · LET'S CONNECT
-        </p>
-
-
-        <h2>
-            Have a system
-            <span>worth building?</span>
-        </h2>
-
-
-        <p class="contact-description">
-            I am interested in opportunities where engineering,
-            technology and problem-solving come together.
-        </p>
-
-
-        <div class="contact-actions">
-
-            <a
-                href="mailto:ahmeedhatem76@gmail.com"
-                class="button button-primary button-large"
-            >
-                Contact Me
-                <span>→</span>
-            </a>
-
-        </div>
-
+    <div class="container">
 
         <div class="contact-grid">
 
+            <div>
 
-            <a
-                href="mailto:ahmeedhatem76@gmail.com"
-                class="contact-card"
-            >
+                <p class="section-kicker">
+                    05 · CONTACT
+                </p>
 
-                <span>
-                    EMAIL
-                </span>
+                <h2>
+                    Let's build something<br>
+                    worth talking about.
+                </h2>
 
-                <strong>
-                    ahmeedhatem76@gmail.com
-                </strong>
+                <p class="contact-intro">
+                    Whether it is robotics, automation, embedded
+                    systems, software testing, data or another
+                    engineering challenge, I am always interested
+                    in meaningful technical work.
+                </p>
 
-                <small>
-                    Send an email ↗
-                </small>
-
-            </a>
-
-
-            <a
-                href="https://www.linkedin.com/in/ahmeedhatem"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-card"
-            >
-
-                <span>
-                    LINKEDIN
-                </span>
-
-                <strong>
-                    /in/ahmeedhatem
-                </strong>
-
-                <small>
-                    Connect ↗
-                </small>
-
-            </a>
+            </div>
 
 
-            <a
-                href="https://github.com/Ahmdhatem"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-card"
-            >
+            <div class="contact-links">
 
-                <span>
-                    GITHUB
-                </span>
+                <a
+                    href="mailto:ahmeedhatem76@gmail.com"
+                    class="contact-link"
+                >
 
-                <strong>
-                    /Ahmdhatem
-                </strong>
+                    <span>
+                        EMAIL
+                    </span>
 
-                <small>
-                    View projects ↗
-                </small>
+                    <strong>
+                        ahmeedhatem76@gmail.com
+                    </strong>
 
-            </a>
+                    <b>
+                        →
+                    </b>
+
+                </a>
 
 
-            <a
-                href="tel:+201023363215"
-                class="contact-card"
-            >
+                <a
+                    href="https://github.com/Ahmdhatem"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                >
 
-                <span>
-                    PHONE
-                </span>
+                    <span>
+                        GITHUB
+                    </span>
 
-                <strong>
-                    +20 102 336 3215
-                </strong>
+                    <strong>
+                        github.com/Ahmdhatem
+                    </strong>
 
-                <small>
-                    Call ↗
-                </small>
+                    <b>
+                        →
+                    </b>
 
-            </a>
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/ahmeedhatem"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-link"
+                >
+
+                    <span>
+                        LINKEDIN
+                    </span>
+
+                    <strong>
+                        Ahmed Hatem
+                    </strong>
+
+                    <b>
+                        →
+                    </b>
+
+                </a>
+
+            </div>
 
         </div>
 
     </div>
 
 </section>
-
-
 
 </main>
 
@@ -1901,27 +1463,17 @@
      FOOTER
 ========================================================= -->
 
-<footer class="site-footer">
+<footer class="footer">
 
     <div class="container footer-inner">
 
-        <div>
+        <span>
+            © 2026 Ahmed Hatem
+        </span>
 
-            <strong>
-                AHMED<span>.</span>
-            </strong>
-
-            <p>
-                Mechatronics Engineer · Cairo, Egypt
-            </p>
-
-        </div>
-
-
-        <p>
-            © 2026 Ahmed Hatem. Built with engineering in mind.
-        </p>
-
+        <span>
+            Mechatronics Engineer
+        </span>
 
         <a href="#home">
             Back to top ↑
@@ -1932,6 +1484,52 @@
 </footer>
 
 
-</body>
 
+<!-- =========================================================
+     MOBILE MENU
+========================================================= -->
+
+<script>
+
+    const menuToggle =
+        document.getElementById("menuToggle");
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+
+    menuToggle.addEventListener("click", function () {
+
+        const isOpen =
+            navLinks.classList.toggle("open");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+    });
+
+
+    document
+        .querySelectorAll(".nav-links a")
+        .forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                navLinks.classList.remove("open");
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            });
+
+        });
+
+</script>
+
+
+</body>
 </html>
